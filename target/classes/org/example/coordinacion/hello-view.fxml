@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.coordinacion.HelloController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/fondobdg.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_Title" alignment="TOP_CENTER" layoutX="23.0" layoutY="21.0" prefHeight="26.0" prefWidth="485.0" text="Coordinación de BDG Zona VIII Chiapas" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Agregar" layoutX="118.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#agregarBanda" prefHeight="32.0" prefWidth="90.0" text="AgregarBDG" />
+      <Button fx:id="btn_MostrarBDG" layoutX="329.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#mostrarBanda" prefHeight="32.0" prefWidth="90.0" text="MostrarBDG" />
+      <Button fx:id="btn_Aelemento" layoutX="58.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#agregarElemento" text="Agregar elemento" />
+      <Button fx:id="btn_mostrarElementos" layoutX="202.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#mostrarElementos" text="Mostrar Elementos" />
+      <Button fx:id="btn_eliminarBDG" layoutX="221.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#eliminarBDG" text="Eliminar BDG" />
+      <Button fx:id="btn_eliminar_elememto" layoutX="351.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#eliminarElemento" text="Eliminar Elemenetos" />
+   </children>
+</AnchorPane>
